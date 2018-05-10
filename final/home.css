@@ -174,7 +174,7 @@ div.open{
   padding: 0px;
   visibility: visible;
 }
-#detail:active{
+#detail:hover{
   position: relative;
   color: blanchedalmond;
   width: 100%;
@@ -199,7 +199,7 @@ div.open{
   padding: 0px;
   visibility: visible;
 }
-#detail2:active{
+#detail2:hover{
   position: relative;
   color: blanchedalmond;
   width: 100%;
@@ -223,7 +223,7 @@ div.open{
   padding: 0px;
   visibility: visible;
 }
-#detail3:active{
+#detail3:hover{
   position: relative;
   color: blanchedalmond;
   width: 100%;
@@ -247,7 +247,7 @@ div.open{
   padding: 0px;
   visibility: visible;
 }
-#detail4:active{
+#detail4:hover{
   position: relative;
   color: blanchedalmond;
   width: 100%;
@@ -271,7 +271,7 @@ div.open{
   padding: 0px;
   visibility: visible;
 }
-#detail5:active{
+#detail5:hover{
   position: relative;
   color: blanchedalmond;
   width: 100%;
@@ -295,7 +295,7 @@ div.open{
   padding: 0px;
   visibility: visible;
 }
-#detail6:active{
+#detail6:hover{
   position: relative;
   color: blanchedalmond;
   width: 100%;
@@ -319,7 +319,7 @@ div.open{
   padding: 0px;
   visibility: visible;
 }
-#detail7:active{
+#detail7:hover{
   position: relative;
   color: blanchedalmond;
   width: 100%;
@@ -344,7 +344,7 @@ div.open{
   padding: 0px;
   visibility: visible;
 }
-#detail8:active{
+#detail8:hover{
   position: relative;
   color: blanchedalmond;
   width: 100%;
