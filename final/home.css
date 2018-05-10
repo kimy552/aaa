@@ -1,0 +1,416 @@
+/* Style the video: 100% width and height to cover the entire window *
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+
+h1{
+  font-size: 8em;
+  position: fixed;
+left: 86px;
+  top: 14%;
+  color: beige;
+}
+h2{
+  font-size: 8em;
+  position: fixed;
+left: 86px;
+  top: 20%;
+  color: beige;
+}
+*{
+  margin:0;
+  padding:0;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  font-family: arial,verdana,tahoma;
+
+}
+div.open{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+.letter{
+  display: inline-block;
+  font-weight: 500;
+  font-size: 5em;
+  margin: 0.2em;
+  margin-top: .5em;
+  position: relative;
+  color:ANTIQUEWHITE;
+  transform-style: preserve-3d;
+  perspective: 400;
+  z-index: 1;
+}
+.letter:before, .letter:after{
+  position:absolute;
+  content: attr(data-letter);
+  transform-origin: top left;
+  top:0;
+  left:0;
+}
+.letter, .letter:before, .letter:after{
+  transition: all 0.3s ease-in-out;
+}
+.letter:before{
+  color: #fff;
+  transform:
+    rotateX(0deg)
+    rotateY(0deg)
+    rotateZ(0deg);
+}
+.letter:after{
+  color: rgba(0,0,0,.11);
+  z-index:2;
+  transform:
+    scale(0.9,1)
+    rotateX(0deg)
+    rotateY(0deg)
+    rotateZ(0deg)
+    skew(0deg,1deg);
+}
+.letter:active:before{
+  color: white;
+  transform:
+    rotateX(10deg)
+    rotateY(-80deg)
+    rotateZ(0deg);
+}
+
+.accordian{
+  width: 56em;
+  height: 327px;
+  overflow:hidden;
+  position: relative;
+  top: -5em;
+  left:-0.4em;
+
+
+  margin: 100px auto;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0px 8px 6px -6px black;
+}
+
+.accordian ul{
+
+}
+
+#g{
+  width: 500px;
+  height: 333px;
+}
+.accordian li{
+  position: relative;
+  display:block;
+  width:110px;
+  float: left;
+
+  border-left: 1px solid #888;
+  -webkit-box-shadow: 0 0 25px 10px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 0 25px 10px rgba(0,0,0,0.5);
+
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+
+.accordian ul:hover li{
+  width: 50px;
+}
+
+.accordian ul li:hover{
+  width:500px;
+
+
+}
+
+.accordian li img{
+  display: block;
+}
+
+.image_title{
+
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:500px;
+}
+
+.image_title h3{
+  display: block;
+  color:darkorange ;
+  text-decoration: none;
+  padding:20px;
+  font-size:20px;
+}
+
+.detail{
+  display: block;
+
+
+}
+#detail{
+  position: relative;
+  color: blanchedalmond;
+  width: 100%;
+  margin-bottom: -269px;
+  opacity: ;
+  font-size: 14px;
+  height: 200%;
+  padding: 0px;
+  visibility: visible;
+}
+#detail:hover{
+  position: relative;
+  color: blanchedalmond;
+  width: 100%;
+  margin-bottom: 22px;
+  opacity: ;
+  font-size: 14px;
+  height: 200%;
+  padding: 0px;
+  visibility: visible;
+  background: rgba(0, 0, 0, 0.5);
+  transition: 1s;
+}
+
+#detail2{
+  position: relative;
+  color: blanchedalmond;
+  width: 100%;
+  margin-bottom: -204px;
+  opacity: ;
+  font-size: 14px;
+  height: 200%;
+  padding: 0px;
+  visibility: visible;
+}
+#detail2:hover{
+  position: relative;
+  color: blanchedalmond;
+  width: 100%;
+  margin-bottom: 22px;
+  opacity: ;
+  font-size: 14px;
+  height: 200%;
+  padding: 0px;
+  visibility: visible;
+  background: rgba(0, 0, 0, 0.5);
+  transition: 1s;
+}
+#detail3{
+  position: relative;
+  color: blanchedalmond;
+  width: 100%;
+  margin-bottom: -154px;
+  opacity: ;
+  font-size: 14px;
+  height: 200%;
+  padding: 0px;
+  visibility: visible;
+}
+#detail3:hover{
+  position: relative;
+  color: blanchedalmond;
+  width: 100%;
+  margin-bottom: 22px;
+  opacity: ;
+  font-size: 14px;
+  height: 200%;
+  padding: 0px;
+  visibility: visible;
+  background: rgba(0, 0, 0, 0.5);
+  transition: 1s;
+}
+#detail4{
+  position: relative;
+  color: blanchedalmond;
+  width: 100%;
+  margin-bottom: -314px;
+  opacity: ;
+  font-size: 14px;
+  height: 200%;
+  padding: 0px;
+  visibility: visible;
+}
+#detail4:hover{
+  position: relative;
+  color: blanchedalmond;
+  width: 100%;
+  margin-bottom: 22px;
+  opacity: ;
+  font-size: 14px;
+  height: 200%;
+  padding: 0px;
+  visibility: visible;
+  background: rgba(0, 0, 0, 0.5);
+  transition: 1s;
+}
+#detail5{
+  position: relative;
+  color: blanchedalmond;
+  width: 100%;
+  margin-bottom: -233px;
+  opacity: ;
+  font-size: 14px;
+  height: 200%;
+  padding: 0px;
+  visibility: visible;
+}
+#detail5:hover{
+  position: relative;
+  color: blanchedalmond;
+  width: 100%;
+  margin-bottom: 22px;
+  opacity: ;
+  font-size: 14px;
+  height: 200%;
+  padding: 0px;
+  visibility: visible;
+  background: rgba(0, 0, 0, 0.5);
+  transition: 1s;
+}
+#detail6{
+  position: relative;
+  color: blanchedalmond;
+  width: 100%;
+  margin-bottom: -249px;
+  opacity: ;
+  font-size: 14px;
+  height: 200%;
+  padding: 0px;
+  visibility: visible;
+}
+#detail6:hover{
+  position: relative;
+  color: blanchedalmond;
+  width: 100%;
+  margin-bottom: 22px;
+  opacity: ;
+  font-size: 14px;
+  height: 200%;
+  padding: 0px;
+  visibility: visible;
+  background: rgba(0, 0, 0, 0.5);
+  transition: 1s;
+}
+#detail7{
+  position: relative;
+  color: blanchedalmond;
+  width: 100%;
+  margin-bottom: -216px;
+  opacity: ;
+  font-size: 14px;
+  height: 200%;
+  padding: 0px;
+  visibility: visible;
+}
+#detail7:hover{
+  position: relative;
+  color: blanchedalmond;
+  width: 100%;
+  margin-bottom: 22px;
+  opacity: ;
+  font-size: 14px;
+  height: 200%;
+  padding: 0px;
+  visibility: visible;
+  background: rgba(0, 0, 0, 0.5);
+  transition: 1s;
+}
+
+#detail8{
+  position: relative;
+  color: blanchedalmond;
+  width: 100%;
+  margin-bottom: -89px;
+  opacity: ;
+  font-size: 14px;
+  height: 200%;
+  padding: 0px;
+  visibility: visible;
+}
+#detail8:hover{
+  position: relative;
+  color: blanchedalmond;
+  width: 100%;
+  margin-bottom: 94px;
+  opacity: ;
+  font-size: 14px;
+  height: 200%;
+  padding: 0px;
+  visibility: visible;
+  background: rgba(0, 0, 0, 0.5);
+  transition: 1s;
+}
+.span1{
+  position: relative;
+  top: 6px
+
+  width: 100%;
+  padding: 0px;
+  visibility: visible;
+}
+
+
+
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+
+/* Add some content at the bottom of the video/page */
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+.content:active
+{
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  font-size: 30px;
+  padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
